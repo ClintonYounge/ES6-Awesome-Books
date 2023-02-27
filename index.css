@@ -1,0 +1,134 @@
+* {
+  font-family: 'Dosis', sans-serif;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  margin: auto;
+  color: black;
+}
+
+table {
+  border: 2px solid rgb(0, 0, 0);
+  width: 65%;
+  border-collapse: collapse;
+}
+
+.center {
+  text-align: center;
+}
+
+.delete {
+  position: relative;
+  box-shadow: 4px 3px 1px #454545;
+}
+
+.delete-btn {
+  text-align: right;
+}
+
+hr {
+  width: 15%;
+}
+
+.content {
+  text-align: left;
+}
+
+.submit {
+  position: absolute;
+  text-align: right;
+  right: 35.5555%;
+  box-shadow: 4px 3px 1px #454545;
+}
+
+#book-form {
+  width: 40%;
+  margin: auto;
+  text-align: center;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(odd) {
+  background-color: rgb(217, 217, 217);
+}
+
+input {
+  width: 70%;
+}
+
+header {
+  height: 50px;
+  width: 90%;
+  margin-top: 1%;
+}
+
+.nav-items {
+  display: flex;
+  border: 2px solid grey;
+  height: 40px;
+  margin: auto;
+}
+
+.awesome {
+  width: 70%;
+  padding-left: 5%;
+}
+
+.nav-links {
+  display: flex;
+  width: 100%;
+}
+
+.link1,
+.link2,
+.link3 {
+  cursor: pointer;
+}
+
+.list-section,
+.contact-section {
+  display: none;
+}
+
+.contact-info {
+  display: grid;
+  margin: auto;
+  font-size: 20px;
+  line-height: 35px;
+}
+
+.contact-info ul li {
+  list-style-type: disc;
+}
+
+.date-time {
+  position: absolute;
+  right: 0;
+  margin-right: 5%;
+  font-weight: bolder;
+}
+
+.active {
+  color: blue;
+  font-weight: bold;
+}
+
+footer {
+  margin: auto;
+  position: absolute;
+  bottom: 10px;
+  border: 1px solid black;
+  width: 90%;
+  height: 40px;
+  left: 5%;
+}
+
+.list-section,
+.add-new-section {
+  margin-top: 5%;
+}

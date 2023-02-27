@@ -5,10 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ES6 Awesome Books</title>
+    <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
-    <script src="index.js" defer></script>
 </head>
 <body>
-    
+  <header>
+    <nav class="nav-items">
+      <a href="#" class="awesome">Awesome Books</a>
+      <ul class="nav-links">
+        <li class="link1 link-item">List</li>|
+        <li class="link2 link-item active">Add New</li>|
+        <li class="link3 link-item">Contact</li>
+      </ul>
+    </nav>
+  </header>
+  <span class="date-time"></span>
+    <section class="list-section">
+      <h1 class="center">Awesome Books</h1>
+    <table id="book-list">
+        
+        <tbody>
+          <!-- Book items will be added dynamically with JavaScript -->
+        </tbody>
+      </table>
+    <br>
+    <hr><br>
+    </section>
+    <section class="add-new-section">
+      <div class="form-container">
+        <form id="book-form">
+        <h2 class="center">Add a new book</h2><br>
+        <input type="text" id="title" name="title" required placeholder="Title"><br><br>
+        <input type="text" id="author" name="author" required placeholder="Author"><br><br>
+        <button type="submit" class="submit center">Add</button>
+      </form>
+    </div>
+    </section>
+    <section class="contact-section">
+      <br><br><h1 class="center">Contact information</h1>
+     <br><br> 
+      <div class="contact-info">
+        <p>Do you have any questions or you just want to say "Hello"? <br> You can reach out to us!</p>
+          <ul class="">
+            <li>Our e-mail: clintondaniel@mail.com</li>
+            <li>Our phone number: 0043586534422</li>
+            <li>Our address: Microverse 22, 84503 oklahoma, USA</li>
+          </ul>
+        </div>
+    </section>
+    <footer>
+      <p > Copyright ... <em>Clinton Younge</em></p>
+    </footer>
+    <script type="module" src="./index.js"></script>
+    <script src="./navigation.js"></script>
 </body>
 </html>
