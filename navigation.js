@@ -36,5 +36,3 @@ navButtons.forEach((button) => {
     button.classList.add('active');
   });
 });
-
-document.querySelector('.date-time').textContent = Date();
