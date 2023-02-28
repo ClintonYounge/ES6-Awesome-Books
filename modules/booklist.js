@@ -8,19 +8,19 @@ export class BookList {
     this.authorInput = document.querySelector('#author');
 
     // Bind event listeners
-    this.form.addEventListener('submit', this.addBook.bind(this));
-    this.table.addEventListener('click', this.removeBook.bind(this));
+    this.form.addEventListener('submit', (e) => this.addBook(e));
+    this.table.addEventListener('click', (e) => this.removeBook(e));
     // Display books
     this.displayBooks();
   }
 
   // Save books to local storage
-  saveBooks() {
+  saveBooks = () => {
     localStorage.setItem('books', JSON.stringify(this.books));
   }
 
   // Display all books in the list
-  displayBooks() {
+  displayBooks = () => {
     this.table.innerHTML = '';
     this.books.forEach((book) => {
       const row = document.createElement('tr');
@@ -34,7 +34,7 @@ export class BookList {
   }
 
   // Add a new book to the list
-  addBook(e) {
+  addBook = (e) => {
     e.preventDefault();
     const title = this.titleInput.value.trim();
     const author = this.authorInput.value.trim();
@@ -50,7 +50,7 @@ export class BookList {
   }
 
   // Remove a book from the list
-  removeBook(e) {
+  removeBook = (e) => {
     if (!e.target.classList.contains('delete-button')) {
       return;
     }
