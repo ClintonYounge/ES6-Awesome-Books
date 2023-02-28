@@ -107,7 +107,7 @@ Example command:
 Clone this repository to your desired folder:
 
 ```sh
-  git clone git@github.com:NicolasAndrehh/Awesome-Books-ES6.git
+  git clone git@github.com:ClintonYounge/ES6-Awesome-Books.git
 ```
 
 ### Install
