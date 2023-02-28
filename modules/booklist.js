@@ -1,3 +1,4 @@
+/* eslint-disable import/prefer-default-export */
 export class BookList {
   constructor() {
     this.books = JSON.parse(localStorage.getItem('books')) || [];
